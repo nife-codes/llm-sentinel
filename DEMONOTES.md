@@ -46,3 +46,10 @@ The system is tunable per deployment:
 Security systems are about calibrated risk, not zero risk."
 
 Why this works: Shows empirical testing, tradeoff awareness, production thinking
+
+IF They Ask About Production Deployment:
+Good answer:
+
+"Timeouts are configurable. In production, you'd tune based on your model's p99 latency and acceptable user wait time. Local models might need 60s+, hosted APIs are usually <5s."
+
+This shows you understand production concerns without dwelling on your demo setup.
