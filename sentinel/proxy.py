@@ -40,7 +40,7 @@ async def chat_completions(request: Request):
     
     return response
 
-async def call_llm(body: dict) -> dict:
+async def call_llm(body: dict, retry: bool = True) -> dict:
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(
@@ -50,17 +50,34 @@ async def call_llm(body: dict) -> dict:
             )
             return response.json()
     except httpx.TimeoutException:
+        if retry:
+            return await call_llm(body, retry=False)
         return {
-            "error": "LLM timeout",
+            "error": "LLM timeout after retry",
             "choices": [{"message": {"content": "Service temporarily unavailable."}}],
             "usage": {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0}
         }
     except Exception as e:
+        if retry:
+            return await call_llm(body, retry=False)
         return {
-            "error": str(e),
+            "error": f"LLM error after retry: {str(e)}",
             "choices": [{"message": {"content": "Error processing request."}}],
             "usage": {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0}
         }
+
+@app.get("/cache/stats")
+async def get_cache_stats():
+    return cache.stats()
+
+@app.get("/config")
+async def get_config():
+    return {
+        "similarity_threshold": config.SIMILARITY_THRESHOLD,
+        "cache_ttl_seconds": config.CACHE_TTL_SECONDS,
+        "llm_model": config.LLM_MODEL,
+        "llm_provider": config.LLM_BASE_URL,
+    }
 
 @app.get("/metrics")
 async def get_metrics():

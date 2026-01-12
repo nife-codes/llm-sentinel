@@ -40,3 +40,16 @@ class SemanticCache:
         prompt_lower = prompt.lower()
         keywords = ["current", "now", "today", "latest"]
         return any(keyword in prompt_lower for keyword in keywords)
+    
+    def stats(self) -> dict:
+        now = datetime.now()
+        valid_entries = sum(
+            1 for _, _, timestamp, _ in self.cache
+            if now - timestamp <= timedelta(seconds=config.CACHE_TTL_SECONDS)
+        )
+        
+        return {
+            "total_entries": len(self.cache),
+            "valid_entries": valid_entries,
+            "expired_entries": len(self.cache) - valid_entries,
+        }
