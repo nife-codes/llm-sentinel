@@ -1,0 +1,187 @@
+[
+  {
+    "prompt": "How do I reset my password?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 55985,
+    "tokens": 370
+  },
+  {
+    "prompt": "How can I reset my password?",
+    "cached": true,
+    "similarity": 0.9916762113571167,
+    "latency_ms": 3293,
+    "tokens": 370
+  },
+  {
+    "prompt": "How do I reset my account password?",
+    "cached": true,
+    "similarity": 0.9653810858726501,
+    "latency_ms": 2508,
+    "tokens": 370
+  },
+  {
+    "prompt": "I forgot my password",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 26262,
+    "tokens": 303
+  },
+  {
+    "prompt": "I can't remember my password",
+    "cached": true,
+    "similarity": 0.8517696857452393,
+    "latency_ms": 2461,
+    "tokens": 303
+  },
+  {
+    "prompt": "Help me recover my password",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 28313,
+    "tokens": 336
+  },
+  {
+    "prompt": "Lost my login credentials",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 34819,
+    "tokens": 433
+  },
+  {
+    "prompt": "What is the password policy?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 30801,
+    "tokens": 374
+  },
+  {
+    "prompt": "How long does a password need to be?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 25166,
+    "tokens": 313
+  },
+  {
+    "prompt": "Can I use special characters in my password?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 21294,
+    "tokens": 265
+  },
+  {
+    "prompt": "What's your refund policy?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 18882,
+    "tokens": 215
+  },
+  {
+    "prompt": "How do I contact support?",
+    "error": "Expecting value: line 1 column 1 (char 0)",
+    "latency_ms": 237636
+  },
+  {
+    "prompt": "Where can I find documentation?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 43126,
+    "tokens": 412
+  },
+  {
+    "prompt": "What are your business hours?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 8756,
+    "tokens": 93
+  },
+  {
+    "prompt": "How do I iterate over a list in Python?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 47761,
+    "tokens": 576
+  },
+  {
+    "prompt": "How to iterate through a list in Python?",
+    "cached": true,
+    "similarity": 0.9851612448692322,
+    "latency_ms": 2486,
+    "tokens": 576
+  },
+  {
+    "prompt": "What's the syntax for looping over a Python list?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 39053,
+    "tokens": 471
+  },
+  {
+    "prompt": "How do I sort a list in Python?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 44893,
+    "tokens": 535
+  },
+  {
+    "prompt": "How do I reverse a list in Python?",
+    "error": "Expecting value: line 1 column 1 (char 0)",
+    "latency_ms": 736331
+  },
+  {
+    "prompt": "How do I filter a list in Python?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 57024,
+    "tokens": 518
+  },
+  {
+    "prompt": "What's the current exchange rate?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 16231,
+    "tokens": 187
+  },
+  {
+    "prompt": "What's today's weather?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 15902,
+    "tokens": 186
+  },
+  {
+    "prompt": "What's the latest news?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 7989,
+    "tokens": 81
+  },
+  {
+    "prompt": "Show me real-time stock prices",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 18516,
+    "tokens": 216
+  },
+  {
+    "prompt": "What's my account balance?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 5145,
+    "tokens": 49
+  },
+  {
+    "prompt": "Show me my order history",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 9937,
+    "tokens": 106
+  },
+  {
+    "prompt": "What's my current subscription?",
+    "cached": false,
+    "similarity": 0.0,
+    "latency_ms": 4842,
+    "tokens": 47
+  }
+]
